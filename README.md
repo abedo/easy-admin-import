@@ -60,3 +60,21 @@ php bin/console make:fixtures
 php bin/console doctrine:fixtures:load --append
 
 composer require easycorp/easyadmin-bundle:2.3.5
+
+php bin/console make:subscriber
+> PostFileSubscriber
+> easy_admin.pre_persist
+
+doctrine:database:import
+
+git config user.email "logic@op.pl"
+git config user.name "Wojciech Kaźmierczak"
+
+$ git remote add origin remote repository URL
+# Sets the new remote
+
+$ git remote -v
+# Verifies the new remote URL
+
+$ git push origin master
+# Pushes the changes in your local repository up to the remote repository
