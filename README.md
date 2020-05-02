@@ -53,8 +53,6 @@ php bin/console make:migration
 php bin/console doctrine:migrations:status
 php bin/console doctrine:migrations:migrate
 
-
-
 composer require orm-fixtures --dev
 php bin/console make:fixtures
 php bin/console doctrine:fixtures:load --append
@@ -67,14 +65,8 @@ php bin/console make:subscriber
 
 doctrine:database:import
 
-git config user.email "logic@op.pl"
-git config user.name "Wojciech Kaźmierczak"
+$ git remote add origin https://github.com/abedo/easy-admin-import.git
+git push origin master
+git push -u origin master
 
-$ git remote add origin remote repository URL
-# Sets the new remote
-
-$ git remote -v
-# Verifies the new remote URL
-
-$ git push origin master
-# Pushes the changes in your local repository up to the remote repository
+composer require phpoffice/phpspreadsheet
